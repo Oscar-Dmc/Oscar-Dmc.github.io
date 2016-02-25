@@ -1,67 +1,160 @@
 <!DOCTYPE html>
-<!--PÁGINA AÚN EN CONSTRUCCIÓN-->
 <html lang="es">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="description" content="Página de presentación contenedora de prácticas, trabajos, colaboraciónes, etc.">
-	<meta name="author" content="Óscar David Martín Cabrera">
-	<!--Adición del bootstrap-->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-    <!--<link href="css/main.css" rel="stylesheet">-->
-    <script src="js/jquery-1.12.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> Para el uso de iconos y herramientas extras-->
-	<title>Óscar Dmc</title>
-	<!--Completar con el resto de datos a medida que sea necesario-->
-	<link rel="stylesheet" href="style.css">
-	<!--Fuentes-->
-	<link href='https://fonts.googleapis.com/css?family=Orbitron:400,900' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Óscar-Dmc</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
 </head>
-<body>
-	<header>
-		<div id="cont-sup">
-			<p id="t-cabecera">Óscar D. Martín Cabrera</p>
-		</div>
-	</header>
-	<div class="cont">
-		<div class="cont-titulos">
-			<span class="titulos">Datos personales</span>	
-		</div>
-		<ul>
-			<!--<li><span class="t-dato-izq">Nombre:</span><span class="t-dato-der"> Óscar David Martín Cabrera</span></li>-->
-			<li><span class="t-dato-izq">Fecha de nacimiento:</span><span class="t-dato-der"> 03/08/1992</span></li>
-			<li><span class="t-dato-izq">Lugar de recidencia:</span><span class="t-dato-der"> Los Realejos,Tenerife</span></li>
-			<li><span class="t-dato-izq">Estudios:</span><span class="t-dato-der">   Estudiante de Grado en Ingeniería Informática en ULL</span></li>
-		</ul>
-	</div>
-	<!--Índice ya que carece de sentido teniendo una única asignatura.
-	<div class="cont">
-		<div class="cont-titulos">
-			<span class="titulos">Índice</span>
-		</div>
 
-		<ul>
-			<li><a href="#ancla2">Procesadores de Lenguajes - PL</a></li>
-		</ul>	
-	</div>-->
-	<div id="ancla2"></div>
-	<div class="cont">
-		<div class="cont-titulos">
-			<span class="titulos">Procesadores de Lenguajes - PL</span>	
-		</div>
-		<ol>
-			<li><span class="t-dato-izq">Tarea inicial:</span> 
-				<a href="http://ull-esit-gradoii-pl.github.io/tareas-iniciales-Oscar-Dmc/">Tutoriales de Instalación (HTML)</a> ó 
-				<a href="https://github.com/ULL-ESIT-GRADOII-PL/tareas-iniciales-Oscar-Dmc">Repositorio</a>
-			</li>
-			<li><span class="t-dato-izq">Conversor de temperatura:</span> 
-				<a href="http://ull-esit-gradoii-pl.github.io/conversor-de-temperatura-simple-pl-teguayco-oscar/">Conversor de Temperatura (HTML)</a> ó 
-				<a href="https://github.com/ULL-ESIT-GRADOII-PL/conversor-de-temperatura-simple-pl-teguayco-oscar/tree/gh-pages">Repositorio</a>
-			</li>
-		</ol>
-	</div>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Óscar</span> Dmc
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Sobre mi</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Asignaturas</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h1 class="brand-heading">Óscar D. Martín Cabrera</h1>
+                        <p class="intro-text">Estudiante de Ingeniería Informática en la Universidad de La Laguna <br>Portafolio para las asignaturas</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Sobre mi</h2>
+                <p>Me llamo Óscar David Martín Cabrera, nací el 3 de Agosto de 1992, actualmente resido en Los Realejos, al norte de la isla de Tenerife. Entre mis aficiones se encuentran los videojuegos, las series y leer.</p>
+                <p>En cuanto a lo profecional, termino mis estudios de grado en ingeniería informática en la Universidad de La Laguna. También he realizado cusos de HTML y CSS  titulados por la FGULL, y conocimientos medios-avanzados de otros lenguajes como C++, Java, JavaScript, etc</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Procesadores del Lenguaje (PL)</h2>
+                    <p>Todas las prácticas realizadas en la asignatura de Procesadores del Lenguaje</p>
+                    <div class="col-lg-3 col-lg-offset-0">
+                      <a href="http://ull-esit-gradoii-pl.github.io/tareas-iniciales-Oscar-Dmc/" class="btn btn-default btn-lg">Tutoriales de instalación</a>
+                    </div>
+                     <div class="col-lg-3 col-lg-offset-4">
+                      <a href="http://ull-esit-gradoii-pl.github.io/conversor-de-temperatura-simple-pl-teguayco-oscar/" class="btn btn-default btn-lg"><span>Conversor de Temperatura<span></a>
+                    </div>
+                    <div class="col-lg-3 col-lg-offset-0">
+                      <a href="https://github.com/ULL-ESIT-GRADOII-PL/tareas-iniciales-Oscar-Dmc" class="btn btn-default btn-lg">Repositorio de Tutoriales</a>
+                    </div>
+                    <div class="col-lg-3 col-lg-offset-4">
+                      <a href="https://github.com/ULL-ESIT-GRADOII-PL/conversor-de-temperatura-simple-pl-teguayco-oscar" class="btn btn-default btn-lg">Repositorio del Conversor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contacto</h2>
+                <p>Puedes visitar alguna de mis perfiles para obtener más información acerca de mí</p>
+                <ul class="list-inline banner-social-buttons">
+                    <!--<li>
+                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>-->
+                    <li>
+                        <a href="https://github.com/Oscar-Dmc" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/u/1/110658263829608660335" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
 </body>
+
 </html>
